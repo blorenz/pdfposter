@@ -216,7 +216,7 @@ def decide_num_pages(inbox, mediabox, posterbox, scale=None):
 
 
 def copyPage(page):
-    from PyPdf2.pdf import RectangleObject, NameObject
+    from PyPDF2.pdf import RectangleObject, NameObject
     newpage = PageObject(page.pdf)
     newpage.update(page)
     # Copy Rectangles to be manipulatable
